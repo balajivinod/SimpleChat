@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC779F9D21B4F7010011048C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC779F9C21B4F7010011048C /* AppDelegate.m */; };
+		AC779FA021B4F7010011048C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC779F9F21B4F7010011048C /* ViewController.m */; };
+		AC779FA321B4F7010011048C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC779FA121B4F7010011048C /* Main.storyboard */; };
+		AC779FA521B4F7030011048C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC779FA421B4F7030011048C /* Assets.xcassets */; };
+		AC779FA821B4F7030011048C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC779FA621B4F7030011048C /* LaunchScreen.storyboard */; };
+		AC779FAB21B4F7030011048C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC779FAA21B4F7030011048C /* main.m */; };
+		AC779FB521B4F7030011048C /* SimpleChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC779FB421B4F7030011048C /* SimpleChatTests.m */; };
+		AC779FC121B4FE690011048C /* SCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = AC779FC021B4FE690011048C /* SCMessage.m */; };
+		AC779FC421B4FF9C0011048C /* SCMessageAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = AC779FC321B4FF9C0011048C /* SCMessageAttachment.m */; };
+		AC779FC721B500810011048C /* SCServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AC779FC621B500810011048C /* SCServiceManager.m */; };
+		AC779FCB21B503C20011048C /* SCParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AC779FCA21B503C20011048C /* SCParser.m */; };
+		AC779FCE21B522980011048C /* TextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC779FCD21B522980011048C /* TextCell.m */; };
+		AC779FD121B522AA0011048C /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC779FD021B522AA0011048C /* ImageCell.m */; };
+		AC82DE5721B55D5900166591 /* SCImageCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC82DE5621B55D5900166591 /* SCImageCaptureViewController.m */; };
+		ACA513BD21B683DE004243F3 /* TextCellTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA513BC21B683DE004243F3 /* TextCellTwo.m */; };
+		ACA513C021B696EF004243F3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA513BE21B696EE004243F3 /* MBProgressHUD.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC779FB121B4F7030011048C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC779F9021B4F7010011048C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC779F9721B4F7010011048C;
+			remoteInfo = SimpleChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC779F9821B4F7010011048C /* SimpleChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC779F9B21B4F7010011048C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AC779F9C21B4F7010011048C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AC779F9E21B4F7010011048C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AC779F9F21B4F7010011048C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AC779FA221B4F7010011048C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC779FA421B4F7030011048C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC779FA721B4F7030011048C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC779FA921B4F7030011048C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC779FAA21B4F7030011048C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AC779FB021B4F7030011048C /* SimpleChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC779FB421B4F7030011048C /* SimpleChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleChatTests.m; sourceTree = "<group>"; };
+		AC779FB621B4F7030011048C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC779FBF21B4FE690011048C /* SCMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMessage.h; sourceTree = "<group>"; };
+		AC779FC021B4FE690011048C /* SCMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCMessage.m; sourceTree = "<group>"; };
+		AC779FC221B4FF9C0011048C /* SCMessageAttachment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMessageAttachment.h; sourceTree = "<group>"; };
+		AC779FC321B4FF9C0011048C /* SCMessageAttachment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCMessageAttachment.m; sourceTree = "<group>"; };
+		AC779FC521B500810011048C /* SCServiceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCServiceManager.h; sourceTree = "<group>"; };
+		AC779FC621B500810011048C /* SCServiceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCServiceManager.m; sourceTree = "<group>"; };
+		AC779FC821B502A50011048C /* SCConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCConstants.h; sourceTree = "<group>"; };
+		AC779FC921B503C20011048C /* SCParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCParser.h; sourceTree = "<group>"; };
+		AC779FCA21B503C20011048C /* SCParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCParser.m; sourceTree = "<group>"; };
+		AC779FCC21B522980011048C /* TextCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextCell.h; sourceTree = "<group>"; };
+		AC779FCD21B522980011048C /* TextCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextCell.m; sourceTree = "<group>"; };
+		AC779FCF21B522AA0011048C /* ImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCell.h; sourceTree = "<group>"; };
+		AC779FD021B522AA0011048C /* ImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
+		AC82DE5521B55D5900166591 /* SCImageCaptureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCImageCaptureViewController.h; sourceTree = "<group>"; };
+		AC82DE5621B55D5900166591 /* SCImageCaptureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCImageCaptureViewController.m; sourceTree = "<group>"; };
+		ACA513BB21B683DE004243F3 /* TextCellTwo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextCellTwo.h; sourceTree = "<group>"; };
+		ACA513BC21B683DE004243F3 /* TextCellTwo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextCellTwo.m; sourceTree = "<group>"; };
+		ACA513BE21B696EE004243F3 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		ACA513BF21B696EF004243F3 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC779F9521B4F7010011048C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC779FAD21B4F7030011048C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC779F8F21B4F7010011048C = {
+			isa = PBXGroup;
+			children = (
+				AC779F9A21B4F7010011048C /* SimpleChat */,
+				AC779FB321B4F7030011048C /* SimpleChatTests */,
+				AC779F9921B4F7010011048C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC779F9921B4F7010011048C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC779F9821B4F7010011048C /* SimpleChat.app */,
+				AC779FB021B4F7030011048C /* SimpleChatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC779F9A21B4F7010011048C /* SimpleChat */ = {
+			isa = PBXGroup;
+			children = (
+				ACA513C921B6AC6A004243F3 /* Appdelegate */,
+				ACA513C821B6AC58004243F3 /* ProgressView */,
+				ACA513C721B6AC35004243F3 /* Storyboard */,
+				ACA513C621B6AC15004243F3 /* Constants */,
+				ACA513C521B6ABFB004243F3 /* CustomViews */,
+				ACA513C421B6ABE5004243F3 /* Parser */,
+				ACA513C321B6ABCF004243F3 /* ServiceManager */,
+				ACA513C221B6ABB6004243F3 /* Model */,
+				ACA513C121B6ABA3004243F3 /* ViewController */,
+				AC779FA421B4F7030011048C /* Assets.xcassets */,
+				AC779FA921B4F7030011048C /* Info.plist */,
+				AC779FAA21B4F7030011048C /* main.m */,
+			);
+			path = SimpleChat;
+			sourceTree = "<group>";
+		};
+		AC779FB321B4F7030011048C /* SimpleChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC779FB421B4F7030011048C /* SimpleChatTests.m */,
+				AC779FB621B4F7030011048C /* Info.plist */,
+			);
+			path = SimpleChatTests;
+			sourceTree = "<group>";
+		};
+		ACA513C121B6ABA3004243F3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AC82DE5521B55D5900166591 /* SCImageCaptureViewController.h */,
+				AC82DE5621B55D5900166591 /* SCImageCaptureViewController.m */,
+				AC779F9E21B4F7010011048C /* ViewController.h */,
+				AC779F9F21B4F7010011048C /* ViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		ACA513C221B6ABB6004243F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC779FC221B4FF9C0011048C /* SCMessageAttachment.h */,
+				AC779FC321B4FF9C0011048C /* SCMessageAttachment.m */,
+				AC779FBF21B4FE690011048C /* SCMessage.h */,
+				AC779FC021B4FE690011048C /* SCMessage.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ACA513C321B6ABCF004243F3 /* ServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				AC779FC521B500810011048C /* SCServiceManager.h */,
+				AC779FC621B500810011048C /* SCServiceManager.m */,
+			);
+			path = ServiceManager;
+			sourceTree = "<group>";
+		};
+		ACA513C421B6ABE5004243F3 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				AC779FC921B503C20011048C /* SCParser.h */,
+				AC779FCA21B503C20011048C /* SCParser.m */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		ACA513C521B6ABFB004243F3 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				AC779FCC21B522980011048C /* TextCell.h */,
+				AC779FCD21B522980011048C /* TextCell.m */,
+				AC779FCF21B522AA0011048C /* ImageCell.h */,
+				AC779FD021B522AA0011048C /* ImageCell.m */,
+				ACA513BB21B683DE004243F3 /* TextCellTwo.h */,
+				ACA513BC21B683DE004243F3 /* TextCellTwo.m */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		ACA513C621B6AC15004243F3 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				AC779FC821B502A50011048C /* SCConstants.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		ACA513C721B6AC35004243F3 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				AC779FA621B4F7030011048C /* LaunchScreen.storyboard */,
+				AC779FA121B4F7010011048C /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		ACA513C821B6AC58004243F3 /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				ACA513BF21B696EF004243F3 /* MBProgressHUD.h */,
+				ACA513BE21B696EE004243F3 /* MBProgressHUD.m */,
+			);
+			path = ProgressView;
+			sourceTree = "<group>";
+		};
+		ACA513C921B6AC6A004243F3 /* Appdelegate */ = {
+			isa = PBXGroup;
+			children = (
+				AC779F9B21B4F7010011048C /* AppDelegate.h */,
+				AC779F9C21B4F7010011048C /* AppDelegate.m */,
+			);
+			path = Appdelegate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC779F9721B4F7010011048C /* SimpleChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC779FB921B4F7030011048C /* Build configuration list for PBXNativeTarget "SimpleChat" */;
+			buildPhases = (
+				AC779F9421B4F7010011048C /* Sources */,
+				AC779F9521B4F7010011048C /* Frameworks */,
+				AC779F9621B4F7010011048C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleChat;
+			productName = SimpleChat;
+			productReference = AC779F9821B4F7010011048C /* SimpleChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC779FAF21B4F7030011048C /* SimpleChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC779FBC21B4F7030011048C /* Build configuration list for PBXNativeTarget "SimpleChatTests" */;
+			buildPhases = (
+				AC779FAC21B4F7030011048C /* Sources */,
+				AC779FAD21B4F7030011048C /* Frameworks */,
+				AC779FAE21B4F7030011048C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC779FB221B4F7030011048C /* PBXTargetDependency */,
+			);
+			name = SimpleChatTests;
+			productName = SimpleChatTests;
+			productReference = AC779FB021B4F7030011048C /* SimpleChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC779F9021B4F7010011048C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = BalajiMAC;
+				TargetAttributes = {
+					AC779F9721B4F7010011048C = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					AC779FAF21B4F7030011048C = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = AC779F9721B4F7010011048C;
+					};
+				};
+			};
+			buildConfigurationList = AC779F9321B4F7010011048C /* Build configuration list for PBXProject "SimpleChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC779F8F21B4F7010011048C;
+			productRefGroup = AC779F9921B4F7010011048C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC779F9721B4F7010011048C /* SimpleChat */,
+				AC779FAF21B4F7030011048C /* SimpleChatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC779F9621B4F7010011048C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC779FA821B4F7030011048C /* LaunchScreen.storyboard in Resources */,
+				AC779FA521B4F7030011048C /* Assets.xcassets in Resources */,
+				AC779FA321B4F7010011048C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC779FAE21B4F7030011048C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC779F9421B4F7010011048C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC779FA021B4F7010011048C /* ViewController.m in Sources */,
+				AC779FCB21B503C20011048C /* SCParser.m in Sources */,
+				AC779FCE21B522980011048C /* TextCell.m in Sources */,
+				AC779FC721B500810011048C /* SCServiceManager.m in Sources */,
+				ACA513BD21B683DE004243F3 /* TextCellTwo.m in Sources */,
+				AC779FC121B4FE690011048C /* SCMessage.m in Sources */,
+				AC779FC421B4FF9C0011048C /* SCMessageAttachment.m in Sources */,
+				ACA513C021B696EF004243F3 /* MBProgressHUD.m in Sources */,
+				AC779FAB21B4F7030011048C /* main.m in Sources */,
+				AC82DE5721B55D5900166591 /* SCImageCaptureViewController.m in Sources */,
+				AC779FD121B522AA0011048C /* ImageCell.m in Sources */,
+				AC779F9D21B4F7010011048C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC779FAC21B4F7030011048C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC779FB521B4F7030011048C /* SimpleChatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC779FB221B4F7030011048C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC779F9721B4F7010011048C /* SimpleChat */;
+			targetProxy = AC779FB121B4F7030011048C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC779FA121B4F7010011048C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC779FA221B4F7010011048C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC779FA621B4F7030011048C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC779FA721B4F7030011048C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC779FB721B4F7030011048C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AC779FB821B4F7030011048C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC779FBA21B4F7030011048C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
+				INFOPLIST_FILE = SimpleChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simple.SimpleChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC779FBB21B4F7030011048C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
+				INFOPLIST_FILE = SimpleChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simple.SimpleChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AC779FBD21B4F7030011048C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SimpleChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aspire.SimpleChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleChat.app/SimpleChat";
+			};
+			name = Debug;
+		};
+		AC779FBE21B4F7030011048C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SimpleChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aspire.SimpleChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleChat.app/SimpleChat";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC779F9321B4F7010011048C /* Build configuration list for PBXProject "SimpleChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC779FB721B4F7030011048C /* Debug */,
+				AC779FB821B4F7030011048C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC779FB921B4F7030011048C /* Build configuration list for PBXNativeTarget "SimpleChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC779FBA21B4F7030011048C /* Debug */,
+				AC779FBB21B4F7030011048C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC779FBC21B4F7030011048C /* Build configuration list for PBXNativeTarget "SimpleChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC779FBD21B4F7030011048C /* Debug */,
+				AC779FBE21B4F7030011048C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC779F9021B4F7010011048C /* Project object */;
+}
